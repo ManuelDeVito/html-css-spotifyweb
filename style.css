@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 15vw;
+    height: 90vh;
+    background-color: black;
+    float: left;
+    padding: 30px;
+
+}
+
+main{
+    width: 85vw;
+    height: 90vh;
+    background-color: yellow;
+    float: left;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: grey;
+    float: left;
+
+}
+
+.spotify-search-title {
+    color: white;
+}
+
+.spotify-title {
+    font-size: 40px;
+}
+.fa-spotify {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.spotify-search-subtitle {
+    color: white;
+    padding: 30px 0 20px 0;
+}
+
+.spotify-subtitle {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.spotify-search-playlist {
+    color: white;
+}
+
+.fa-search, .fa-home, .fa-book-open, .fa-arrow-circle-down {
+    padding-right: 10px;
+}
+
+.fa-user {
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.spotify-search-account {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.spotify-playlist {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.spotify-group {
+    font-size: 15px;
+}
+
+.container-app {
+    border-bottom: 2px solid white;
+}
+
+.spotify-app-account {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.spotify-menu {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-menu-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.menu-list {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-transform: uppercase;
+}
+
+#container-menu-artist {
+    width: 70%;
+    margin: auto;
+}
+
+.container-artist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.album-artist {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    margin-right: 20px;
+
+
+
+}
