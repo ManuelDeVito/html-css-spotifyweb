@@ -5,20 +5,20 @@
 }
 
 section {
-    width: 15%;
-    height: calc(100% - 100px);
+    width: 20%;
+    height: calc(100vh - 100px);
     background-color: black;
     float: left;
-    padding: 30px;
-
+    padding: 13px;
 }
 
 main{
-    width: 85%;
-    height: calc(100% - 100px);
+    width: 80%;
+    height: calc(100vh - 100px);
     background-color: yellow;
     float: left;
     overflow: auto;
+
 }
 
 footer {
@@ -26,230 +26,346 @@ footer {
     height: 100px;
     background-color: grey;
     float: left;
+    display: flex;
+    justify-content: space-between;
+    color: white;
 
 }
 
 #spotify-search {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     color: white;
 }
 
-.spotify-title {
-    font-size: 40px;
-    display: inline-block;
+.container-sidebar-top, .search, .home, .library, .spotify-playlist-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
-.fa-spotify {
-    font-size: 40px;
-    margin-right: 10px;
+.icon-spotify{
+    display: block;
+    max-width: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
-.spotify-search-subtitle {
-    color: white;
-    padding: 30px 0 20px 0;
+.logo-spotify {
+    display: none;
+
+}
+
+.fa-search, .fa-home, .fa-book-open {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+
 }
 
 .spotify-subtitle {
-    padding-bottom: 10px;
-    font-size: 20px;
-    display: inline-block;
-    margin-left: 20px;
+    display: none;
 }
 
-.spotify-search-playlist {
-    display: block;
+.spotify-playlist-menu {
+    display: none;
 }
 
-
-.fa-arrow-circle-down {
-    padding-right: 10px;
-}
-
-.fa-user {
-    padding-right: 10px;
-    font-size: 30px;
-}
-
-.spotify-search-account {
-    color: white;
-
-}
-
-.spotify-playlist {
-    text-transform: uppercase;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-
-.spotify-group {
-    font-size: 15px;
-}
 
 .container-app {
     border-bottom: 2px solid white;
 }
 
+
 .spotify-app-account {
-    font-size: 20px;
-    padding: 20px 0;
-    display: inline-block;
+    display: none;
 }
 
+.fa-arrow-circle-down {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.fa-user {
+    display: block;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ----------Fine Sidebar----------- */
+
+
+/* ----------Inizio Main------------ */
+
+
 #container-menu-artist {
-    width: 70%;
+    max-width: 70%;
     margin: auto;
 }
 
 .spotify-menu {
-    height: 100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
+    height: 50px;
+
+
+}
+
+.fa-bars {
+    display: block;
+    font-size: 40px;
+    margin-top: 40px;
+
 }
 
 .spotify-menu-list {
-    display: flex;
-    list-style-type: none;
+    display: none;
 
 }
 
-.menu-list {
-    margin: 0 10px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    text-transform: uppercase;
-}
 
+.title-for-you {
+    font-size: 15px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
 
 
 .container-artist {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
-.title-for-you {
-    margin: 10px 0;
+.copertina {
+    max-width: 150px;
+    margin-right: 15px;
+
+}
+
+.copertina-circle {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.Name-Artist {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 
-.album-artist {
-    height: 150px;
-    width: 150px;
-    background-color: blue;
-    margin: auto;
+/* -----------Fine Main----------- */
+
+
+/* -----------Inizio Footer------- */
+
+.footer-left {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-@media screen and (max-width: 320px) {
+.footer-left span{
+    display: none;
+}
 
-    section {
-        width: 30%;
-        height: height: calc(100% - 100px);
-        background-color: black;
-        float: left;
-        padding: 30px;
-    }
+.copertina-small {
+    max-width: 50px;
+    margin-left: 20px;
+}
 
-    main{
-        width: 70%;
-        height: height: calc(100% - 100px);
-        background-color: yellow;
-        float: left;
-    }
+.fa-heart {
+    color: white;
+    margin-left: 10px;
+}
 
-    footer {
-        height: 100px;
-        background-color: grey;
-        float: left;
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    color: white;
+}
 
-    }
+.footer-center-top {
+    width: 100%;
+    height: 50px;
 
-    .spotify-title {
-        font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.fa-step-backward, .fa-pause-circle, .fa-step-forward {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.footer-center-bottom {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-bar {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.footer-right {
+    display: none;
+    width: 300px;
+}
+
+.footer-right i {
+    margin: 0 10px;
+    color: white;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .icon-spotify {
         display: none;
     }
+
+    .logo-spotify {
+        display: block;
+        max-width: 150px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .container-sidebar-top, .search, .home, .library, .spotify-playlist-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
 
     .spotify-subtitle {
-        padding-bottom: 10px;
-        font-size: 20px;
-        display: inline-block;
-        margin-left: 20px;
-        display: none;
-    }
-
-    .fa-search, .fa-home, .fa-book-open {
-        font-size: 25px;
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        margin-bottom: 20px;
+        display: block;
 
     }
 
-    .spotify-search-playlist {
+    .spotify-playlist-menu {
+        display: block;
+
+    }
+
+    .spotify-playlist {
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .fa-bars {
         display: none;
+    }
+
+    .spotify-menu-list {
+        font-size: 11px;
+        height: 100px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .container-app, .container-user {
+        display: flex;
+        margin: 30px 0;
     }
 
     .spotify-app-account {
+        display: flex;
+    }
+
+    .fa-arrow-circle-down {
+        margin-right: 20px;
         font-size: 20px;
-        padding: 10px 0;
-        display: none;
     }
 
-    .fa-arrow-circle-down  {
-        margin-bottom: 20px;
-        padding: 0 10px;
-    }
-
-     .fa-user{
-        margin-top: 20px;
+    .fa-user {
+        margin-right: 20px;
         font-size: 40px;
-        padding: 0;
-
     }
+
+
+
 
 }
 
-@media screen and (min-width: 320px) {
+
+
+@media screen and (min-width: 992px) {
 
     section {
         width: 15%;
-        height: calc(100% - 100px);
+        height: calc(100vh - 100px);
         background-color: black;
         float: left;
-        padding: 30px;
+
     }
 
     main{
         width: 85%;
-        height: calc(100% - 100px) ;
+        height: calc(100vh - 100px) ;
         background-color: yellow;
         float: left;
     }
 
 
     footer {
-
         height: 100px;
         background-color: grey;
         float: left;
     }
 
-    .spotify-title {
-        font-size: 40px;
+    .spotify-menu-list {
+        font-size: 16px;
+        height: 100px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
     }
 
-    .fa-spotify {
-        font-size: 40px;
-        margin-right: 10px;
-
+    .footer-left span{
+        display: block;
+        margin-left: 10px;
     }
-}
 
-@media screen and (min-width: 768px) {
+    .footer-right {
+
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
