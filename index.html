@@ -8,41 +8,62 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section id="spotify-search">
-            <div class="container-sidebar-top">
-                    <img class="icon-spotify" src="icon-spotify.png">
-                    <img class="logo-spotify" src="logo-spotify.png">
-                <div class="search">
-                    <i class="fas fa-search"></i>
-                    <span class="spotify-subtitle">Cerca</span>
+        <div id="wrapper">
+            <aside>
+                <div class="container-sidebar-top">
+                    <div class="loghi">
+                        <span class="icon-spotify-single">
+                            <img src="icon-spotify.png">
+                        </span>
+                        <span class="logo-spotify-intero">
+                            <img src="logo-spotify.png">
+                        </span>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                <i class="fas fa-search"></i>
+                                <span>Cerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i class="fas fa-home"></i>
+                                <span class=>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i class="fas fa-book-open"></i>
+                                <span>La tua libreria</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spotify-playlist-menu">
+                        <h3 class="spotify-playlist">ascoltati di recente</h3>
+                        <p class="spotify-group">Drapht</p>
+                        <p class="spotify-playlist">artista</p>
+                        <p class="spotify-group">Uno</p>
+                        <p class="spotify-playlist">playlist</p>
+                    </div>
                 </div>
-                <div class="home">
-                    <i class="fas fa-home"></i>
-                    <span class="spotify-subtitle">Home</span>
-                </div>
-                <div class="library">
-                    <i class="fas fa-book-open"></i>
-                    <span class="spotify-subtitle">La tua libreria</span>
-                </div>
-                <div class="spotify-playlist-menu">
-                    <h3 class="spotify-playlist">ascoltati di recente</h3>
-                    <p class="spotify-group">Drapht</p>
-                    <p class="spotify-playlist">artista</p>
-                    <p class="spotify-group">Uno</p>
-                    <p class="spotify-playlist">playlist</p>
-                </div>
-            </div>
                 <div class="container-sidebar-bottom">
                     <div class="container-app">
-                        <i class="fas fa-arrow-circle-down"></i>
-                        <span class="spotify-app-account">Install App</span>
+                        <a href="#">
+                            <i class="fas fa-arrow-circle-down"></i>
+                            <span>Install App</span>
+                        </a>
                     </div>
                     <div class="container-user">
-                        <i class="fas fa-user"></i>
-                        <span class="spotify-app-account">Manuel</span>
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <span>Manuel.DeVito</span>
+                        </a>
                     </div>
                 </div>
-            </section>
+            </aside>
             <main>
                 <div id="container-menu-artist">
                     <header class="spotify-menu">
@@ -66,7 +87,7 @@
                             </div>
 
                             <div class="album-artist">
-                                <img class="copertina" src="https://lh3.googleusercontent.com/proxy/CNzg3yEWdHpI0AgMBhoyWhUPh67_prUZO5kIXiUsa1LwUFfiPJsa7TuRFORSmbfyKtoZ69oPA2dor-e3lOxZLTmlsdzpS3grc7swqNhTvy5gmCy2DPQXBcU1kh8CwDI4t96OgSY04Eek3A">
+                                <img class="copertina" src="https://www.fullsong.it/wp-content/uploads/2016/10/14720385_10154806022814674_2456533454000021194_n.png">
                                 <p class="Name-Artist">Vasco Rossi</p>
                             </div>
 
@@ -134,21 +155,32 @@
                                 <img class="copertina" src="https://www.musictory.it/cover/2978/123977.jpg">
                                 <p class="Name-Artist">Antonello Venditti</p>
                             </div>
-
                         </div>
                     </div>
                 </main>
+            </div>
             <footer>
                 <div class="footer-left">
-                    <img class="copertina-small" src="https://www.nuovecanzoni.com/wp-content/uploads/2014/11/Tzn-The-Best-of-CD-Deluxe-cover-tiziano-ferro.jpg">
-                    <span>L'Amore è una cosa semplice</span>
-                    <i class="far fa-heart"></i>
+                    <div class="copertina-small-left">
+                        <img class="copertina-small" src="https://www.nuovecanzoni.com/wp-content/uploads/2014/11/Tzn-The-Best-of-CD-Deluxe-cover-tiziano-ferro.jpg">
+                    </div>
+                    <div class="text-copertina">
+                        <p class="name-artist">Tiziano Ferro</p>
+                        <p class="name-song">La Fine</p>
+                    </div>
+                    <div class="img-heart">
+                        <i class="far fa-heart"></i>
+                    </div>
                 </div>
                 <div class="footer-center">
                     <div class="footer-center-top">
-                        <i class="fas fa-step-backward"></i>
-                        <i class="far fa-pause-circle"></i>
-                        <i class="fas fa-step-forward"></i>
+                        <div class="icons">
+                            <i class="fas fa-random"></i>
+                            <i class="fas fa-step-backward"></i>
+                            <i class="far fa-pause-circle"></i>
+                            <i class="fas fa-step-forward"></i>
+                            <i class="fas fa-redo-alt"></i>
+                        </div>
                     </div>
                     <div class="footer-center-bottom">
                         <span>2:38</span>
